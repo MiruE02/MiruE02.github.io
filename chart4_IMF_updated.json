@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "IMF lending outstanding as a percent of global GDP ",
+    "subtitle": "Credit outstanding to all members as a percentage of global GDP Source IMF ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"},
+  
+  "data": {"url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Data_IMF_Credit_Outstanding_Updated.csv"},
+
+  "height": 300,
+  "width": 330,
+  "mark": {
+    "type": "bar", 
+    "color": "#86d0bb"},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {"title": null, "grid": false, "ticks": false, "labelAngle": 45}},
+    "y": {
+      "field": "Percentages",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}}
+  }
+}
