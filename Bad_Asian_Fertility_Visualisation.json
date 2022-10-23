@@ -1,0 +1,1487 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "title": {
+    "text": "Exchange rates",
+    "subtitle": "Different countries' fertility rates from 1960-2020 against the US dollar from 2000-2021, Source: The World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1960,
+        "Fertility Rate": 5.756
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1961,
+        "Fertility Rate": 5.905
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1962,
+        "Fertility Rate": 6.062
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1963,
+        "Fertility Rate": 6.206
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1964,
+        "Fertility Rate": 6.32
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1965,
+        "Fertility Rate": 6.385
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1966,
+        "Fertility Rate": 6.384
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1967,
+        "Fertility Rate": 6.316
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1968,
+        "Fertility Rate": 6.184
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1969,
+        "Fertility Rate": 5.986
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1970,
+        "Fertility Rate": 5.725
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1971,
+        "Fertility Rate": 5.403
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1972,
+        "Fertility Rate": 5.035
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1973,
+        "Fertility Rate": 4.643
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1974,
+        "Fertility Rate": 4.244
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1975,
+        "Fertility Rate": 3.859
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1976,
+        "Fertility Rate": 3.508
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1977,
+        "Fertility Rate": 3.2
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1978,
+        "Fertility Rate": 2.943
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1979,
+        "Fertility Rate": 2.745
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1980,
+        "Fertility Rate": 2.613
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1981,
+        "Fertility Rate": 2.547
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1982,
+        "Fertility Rate": 2.536
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1983,
+        "Fertility Rate": 2.561
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1984,
+        "Fertility Rate": 2.607
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1985,
+        "Fertility Rate": 2.65
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1986,
+        "Fertility Rate": 2.666
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1987,
+        "Fertility Rate": 2.643
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1988,
+        "Fertility Rate": 2.575
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1989,
+        "Fertility Rate": 2.46
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1990,
+        "Fertility Rate": 2.309
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1991,
+        "Fertility Rate": 2.14
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1992,
+        "Fertility Rate": 1.977
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1993,
+        "Fertility Rate": 1.838
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1994,
+        "Fertility Rate": 1.731
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1995,
+        "Fertility Rate": 1.66
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1996,
+        "Fertility Rate": 1.622
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1997,
+        "Fertility Rate": 1.605
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1998,
+        "Fertility Rate": 1.597
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 1999,
+        "Fertility Rate": 1.595
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2000,
+        "Fertility Rate": 1.596
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2001,
+        "Fertility Rate": 1.597
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2002,
+        "Fertility Rate": 1.6
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2003,
+        "Fertility Rate": 1.604
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2004,
+        "Fertility Rate": 1.608
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2005,
+        "Fertility Rate": 1.612
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2006,
+        "Fertility Rate": 1.615
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2007,
+        "Fertility Rate": 1.617
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2008,
+        "Fertility Rate": 1.62
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2009,
+        "Fertility Rate": 1.623
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2010,
+        "Fertility Rate": 1.627
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2011,
+        "Fertility Rate": 1.632
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2012,
+        "Fertility Rate": 1.639
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2013,
+        "Fertility Rate": 1.647
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2014,
+        "Fertility Rate": 1.656
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2015,
+        "Fertility Rate": 1.665
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2016,
+        "Fertility Rate": 1.675
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2017,
+        "Fertility Rate": 1.683
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2018,
+        "Fertility Rate": 1.69
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2019,
+        "Fertility Rate": 1.696
+      },
+      {
+        "Country Code": "CHN",
+        "Country Name": "China",
+        "Year": 2020,
+        "Fertility Rate": 1.7
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1960,
+        "Fertility Rate": 2.001
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1961,
+        "Fertility Rate": 2.05
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1962,
+        "Fertility Rate": 2.01
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1963,
+        "Fertility Rate": 2.02
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1964,
+        "Fertility Rate": 2.05
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1965,
+        "Fertility Rate": 2.139
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1966,
+        "Fertility Rate": 1.58
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1967,
+        "Fertility Rate": 2.02
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1968,
+        "Fertility Rate": 2.13
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1969,
+        "Fertility Rate": 2.13
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1970,
+        "Fertility Rate": 2.135
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1971,
+        "Fertility Rate": 2.16
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1972,
+        "Fertility Rate": 2.14
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1973,
+        "Fertility Rate": 2.14
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1974,
+        "Fertility Rate": 2.05
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1975,
+        "Fertility Rate": 1.909
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1976,
+        "Fertility Rate": 1.85
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1977,
+        "Fertility Rate": 1.8
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1978,
+        "Fertility Rate": 1.79
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1979,
+        "Fertility Rate": 1.77
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1980,
+        "Fertility Rate": 1.75
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1981,
+        "Fertility Rate": 1.74
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1982,
+        "Fertility Rate": 1.77
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1983,
+        "Fertility Rate": 1.8
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1984,
+        "Fertility Rate": 1.81
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1985,
+        "Fertility Rate": 1.76
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1986,
+        "Fertility Rate": 1.72
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1987,
+        "Fertility Rate": 1.69
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1988,
+        "Fertility Rate": 1.66
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1989,
+        "Fertility Rate": 1.57
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1990,
+        "Fertility Rate": 1.54
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1991,
+        "Fertility Rate": 1.53
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1992,
+        "Fertility Rate": 1.502
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1993,
+        "Fertility Rate": 1.458
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1994,
+        "Fertility Rate": 1.5
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1995,
+        "Fertility Rate": 1.422
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1996,
+        "Fertility Rate": 1.425
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1997,
+        "Fertility Rate": 1.388
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1998,
+        "Fertility Rate": 1.384
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 1999,
+        "Fertility Rate": 1.342
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2000,
+        "Fertility Rate": 1.359
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2001,
+        "Fertility Rate": 1.33
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2002,
+        "Fertility Rate": 1.32
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2003,
+        "Fertility Rate": 1.29
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2004,
+        "Fertility Rate": 1.29
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2005,
+        "Fertility Rate": 1.26
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2006,
+        "Fertility Rate": 1.32
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2007,
+        "Fertility Rate": 1.34
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2008,
+        "Fertility Rate": 1.37
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2009,
+        "Fertility Rate": 1.37
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2010,
+        "Fertility Rate": 1.39
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2011,
+        "Fertility Rate": 1.39
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2012,
+        "Fertility Rate": 1.41
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2013,
+        "Fertility Rate": 1.43
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2014,
+        "Fertility Rate": 1.42
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2015,
+        "Fertility Rate": 1.45
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2016,
+        "Fertility Rate": 1.44
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2017,
+        "Fertility Rate": 1.43
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2018,
+        "Fertility Rate": 1.42
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2019,
+        "Fertility Rate": 1.36
+      },
+      {
+        "Country Code": "JPN",
+        "Country Name": "Japan",
+        "Year": 2020,
+        "Fertility Rate": 1.34
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1960,
+        "Fertility Rate": 6.095
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1961,
+        "Fertility Rate": 5.929
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1962,
+        "Fertility Rate": 5.738
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1963,
+        "Fertility Rate": 5.533
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1964,
+        "Fertility Rate": 5.325
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1965,
+        "Fertility Rate": 5.125
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1966,
+        "Fertility Rate": 4.941
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1967,
+        "Fertility Rate": 4.772
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1968,
+        "Fertility Rate": 4.617
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1969,
+        "Fertility Rate": 4.474
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1970,
+        "Fertility Rate": 4.53
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1971,
+        "Fertility Rate": 4.54
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1972,
+        "Fertility Rate": 4.12
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1973,
+        "Fertility Rate": 4.07
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1974,
+        "Fertility Rate": 3.77
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1975,
+        "Fertility Rate": 3.43
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1976,
+        "Fertility Rate": 3
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1977,
+        "Fertility Rate": 2.99
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1978,
+        "Fertility Rate": 2.64
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1979,
+        "Fertility Rate": 2.9
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1980,
+        "Fertility Rate": 2.82
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1981,
+        "Fertility Rate": 2.57
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1982,
+        "Fertility Rate": 2.39
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1983,
+        "Fertility Rate": 2.06
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1984,
+        "Fertility Rate": 1.74
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1985,
+        "Fertility Rate": 1.66
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1986,
+        "Fertility Rate": 1.58
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1987,
+        "Fertility Rate": 1.53
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1988,
+        "Fertility Rate": 1.55
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1989,
+        "Fertility Rate": 1.56
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1990,
+        "Fertility Rate": 1.57
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1991,
+        "Fertility Rate": 1.71
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1992,
+        "Fertility Rate": 1.76
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1993,
+        "Fertility Rate": 1.654
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1994,
+        "Fertility Rate": 1.656
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1995,
+        "Fertility Rate": 1.634
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1996,
+        "Fertility Rate": 1.574
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1997,
+        "Fertility Rate": 1.537
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1998,
+        "Fertility Rate": 1.464
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 1999,
+        "Fertility Rate": 1.425
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2000,
+        "Fertility Rate": 1.48
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2001,
+        "Fertility Rate": 1.309
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2002,
+        "Fertility Rate": 1.178
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2003,
+        "Fertility Rate": 1.191
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2004,
+        "Fertility Rate": 1.164
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2005,
+        "Fertility Rate": 1.085
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2006,
+        "Fertility Rate": 1.132
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2007,
+        "Fertility Rate": 1.259
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2008,
+        "Fertility Rate": 1.192
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2009,
+        "Fertility Rate": 1.149
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2010,
+        "Fertility Rate": 1.226
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2011,
+        "Fertility Rate": 1.244
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2012,
+        "Fertility Rate": 1.297
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2013,
+        "Fertility Rate": 1.187
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2014,
+        "Fertility Rate": 1.205
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2015,
+        "Fertility Rate": 1.239
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2016,
+        "Fertility Rate": 1.172
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2017,
+        "Fertility Rate": 1.052
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2018,
+        "Fertility Rate": 0.977
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2019,
+        "Fertility Rate": 0.918
+      },
+      {
+        "Country Code": "KOR",
+        "Country Name": "Korea, Rep.",
+        "Year": 2020,
+        "Fertility Rate": 0.837
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1960,
+        "Fertility Rate": 5.76
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1961,
+        "Fertility Rate": 5.41
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1962,
+        "Fertility Rate": 5.21
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1963,
+        "Fertility Rate": 5.16
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1964,
+        "Fertility Rate": 4.97
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1965,
+        "Fertility Rate": 4.66
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1966,
+        "Fertility Rate": 4.46
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1967,
+        "Fertility Rate": 3.91
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1968,
+        "Fertility Rate": 3.53
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1969,
+        "Fertility Rate": 3.22
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1970,
+        "Fertility Rate": 3.07
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1971,
+        "Fertility Rate": 3.02
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1972,
+        "Fertility Rate": 3.04
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1973,
+        "Fertility Rate": 2.79
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1974,
+        "Fertility Rate": 2.35
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1975,
+        "Fertility Rate": 2.07
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1976,
+        "Fertility Rate": 2.11
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1977,
+        "Fertility Rate": 1.82
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1978,
+        "Fertility Rate": 1.79
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1979,
+        "Fertility Rate": 1.79
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1980,
+        "Fertility Rate": 1.82
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1981,
+        "Fertility Rate": 1.78
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1982,
+        "Fertility Rate": 1.74
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1983,
+        "Fertility Rate": 1.61
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1984,
+        "Fertility Rate": 1.62
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1985,
+        "Fertility Rate": 1.61
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1986,
+        "Fertility Rate": 1.43
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1987,
+        "Fertility Rate": 1.62
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1988,
+        "Fertility Rate": 1.96
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1989,
+        "Fertility Rate": 1.75
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1990,
+        "Fertility Rate": 1.83
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1991,
+        "Fertility Rate": 1.73
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1992,
+        "Fertility Rate": 1.72
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1993,
+        "Fertility Rate": 1.74
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1994,
+        "Fertility Rate": 1.71
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1995,
+        "Fertility Rate": 1.67
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1996,
+        "Fertility Rate": 1.66
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1997,
+        "Fertility Rate": 1.61
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1998,
+        "Fertility Rate": 1.48
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 1999,
+        "Fertility Rate": 1.47
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2000,
+        "Fertility Rate": 1.6
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2001,
+        "Fertility Rate": 1.41
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2002,
+        "Fertility Rate": 1.37
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2003,
+        "Fertility Rate": 1.27
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2004,
+        "Fertility Rate": 1.26
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2005,
+        "Fertility Rate": 1.26
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2006,
+        "Fertility Rate": 1.28
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2007,
+        "Fertility Rate": 1.29
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2008,
+        "Fertility Rate": 1.28
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2009,
+        "Fertility Rate": 1.22
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2010,
+        "Fertility Rate": 1.15
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2011,
+        "Fertility Rate": 1.2
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2012,
+        "Fertility Rate": 1.29
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2013,
+        "Fertility Rate": 1.19
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2014,
+        "Fertility Rate": 1.25
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2015,
+        "Fertility Rate": 1.24
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2016,
+        "Fertility Rate": 1.2
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2017,
+        "Fertility Rate": 1.16
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2018,
+        "Fertility Rate": 1.14
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2019,
+        "Fertility Rate": 1.14
+      },
+      {
+        "Country Code": "SGP",
+        "Country Name": "Singapore",
+        "Year": 2020,
+        "Fertility Rate": 1.1
+      }
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Year", "type": "nominal"},
+    "y": {"field": "Fertility Rate", "type": "quantitative"},
+    "color": {"field": "Country Name", "type": "nominal"}
+  },
+  "config": {}
+}

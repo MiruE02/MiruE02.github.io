@@ -1,0 +1,245 @@
+Country Code,Country Name,Year,Fertility Rate
+CHN,China,1960,5.756
+CHN,China,1961,5.905
+CHN,China,1962,6.062
+CHN,China,1963,6.206
+CHN,China,1964,6.32
+CHN,China,1965,6.385
+CHN,China,1966,6.384
+CHN,China,1967,6.316
+CHN,China,1968,6.184
+CHN,China,1969,5.986
+CHN,China,1970,5.725
+CHN,China,1971,5.403
+CHN,China,1972,5.035
+CHN,China,1973,4.643
+CHN,China,1974,4.244
+CHN,China,1975,3.859
+CHN,China,1976,3.508
+CHN,China,1977,3.2
+CHN,China,1978,2.943
+CHN,China,1979,2.745
+CHN,China,1980,2.613
+CHN,China,1981,2.547
+CHN,China,1982,2.536
+CHN,China,1983,2.561
+CHN,China,1984,2.607
+CHN,China,1985,2.65
+CHN,China,1986,2.666
+CHN,China,1987,2.643
+CHN,China,1988,2.575
+CHN,China,1989,2.46
+CHN,China,1990,2.309
+CHN,China,1991,2.14
+CHN,China,1992,1.977
+CHN,China,1993,1.838
+CHN,China,1994,1.731
+CHN,China,1995,1.66
+CHN,China,1996,1.622
+CHN,China,1997,1.605
+CHN,China,1998,1.597
+CHN,China,1999,1.595
+CHN,China,2000,1.596
+CHN,China,2001,1.597
+CHN,China,2002,1.6
+CHN,China,2003,1.604
+CHN,China,2004,1.608
+CHN,China,2005,1.612
+CHN,China,2006,1.615
+CHN,China,2007,1.617
+CHN,China,2008,1.62
+CHN,China,2009,1.623
+CHN,China,2010,1.627
+CHN,China,2011,1.632
+CHN,China,2012,1.639
+CHN,China,2013,1.647
+CHN,China,2014,1.656
+CHN,China,2015,1.665
+CHN,China,2016,1.675
+CHN,China,2017,1.683
+CHN,China,2018,1.69
+CHN,China,2019,1.696
+CHN,China,2020,1.7
+JPN,Japan,1960,2.001
+JPN,Japan,1961,2.05
+JPN,Japan,1962,2.01
+JPN,Japan,1963,2.02
+JPN,Japan,1964,2.05
+JPN,Japan,1965,2.139
+JPN,Japan,1966,1.58
+JPN,Japan,1967,2.02
+JPN,Japan,1968,2.13
+JPN,Japan,1969,2.13
+JPN,Japan,1970,2.135
+JPN,Japan,1971,2.16
+JPN,Japan,1972,2.14
+JPN,Japan,1973,2.14
+JPN,Japan,1974,2.05
+JPN,Japan,1975,1.909
+JPN,Japan,1976,1.85
+JPN,Japan,1977,1.8
+JPN,Japan,1978,1.79
+JPN,Japan,1979,1.77
+JPN,Japan,1980,1.75
+JPN,Japan,1981,1.74
+JPN,Japan,1982,1.77
+JPN,Japan,1983,1.8
+JPN,Japan,1984,1.81
+JPN,Japan,1985,1.76
+JPN,Japan,1986,1.72
+JPN,Japan,1987,1.69
+JPN,Japan,1988,1.66
+JPN,Japan,1989,1.57
+JPN,Japan,1990,1.54
+JPN,Japan,1991,1.53
+JPN,Japan,1992,1.502
+JPN,Japan,1993,1.458
+JPN,Japan,1994,1.5
+JPN,Japan,1995,1.422
+JPN,Japan,1996,1.425
+JPN,Japan,1997,1.388
+JPN,Japan,1998,1.384
+JPN,Japan,1999,1.342
+JPN,Japan,2000,1.359
+JPN,Japan,2001,1.33
+JPN,Japan,2002,1.32
+JPN,Japan,2003,1.29
+JPN,Japan,2004,1.29
+JPN,Japan,2005,1.26
+JPN,Japan,2006,1.32
+JPN,Japan,2007,1.34
+JPN,Japan,2008,1.37
+JPN,Japan,2009,1.37
+JPN,Japan,2010,1.39
+JPN,Japan,2011,1.39
+JPN,Japan,2012,1.41
+JPN,Japan,2013,1.43
+JPN,Japan,2014,1.42
+JPN,Japan,2015,1.45
+JPN,Japan,2016,1.44
+JPN,Japan,2017,1.43
+JPN,Japan,2018,1.42
+JPN,Japan,2019,1.36
+JPN,Japan,2020,1.34
+KOR,"Korea, Rep.",1960,6.095
+KOR,"Korea, Rep.",1961,5.929
+KOR,"Korea, Rep.",1962,5.738
+KOR,"Korea, Rep.",1963,5.533
+KOR,"Korea, Rep.",1964,5.325
+KOR,"Korea, Rep.",1965,5.125
+KOR,"Korea, Rep.",1966,4.941
+KOR,"Korea, Rep.",1967,4.772
+KOR,"Korea, Rep.",1968,4.617
+KOR,"Korea, Rep.",1969,4.474
+KOR,"Korea, Rep.",1970,4.53
+KOR,"Korea, Rep.",1971,4.54
+KOR,"Korea, Rep.",1972,4.12
+KOR,"Korea, Rep.",1973,4.07
+KOR,"Korea, Rep.",1974,3.77
+KOR,"Korea, Rep.",1975,3.43
+KOR,"Korea, Rep.",1976,3.0
+KOR,"Korea, Rep.",1977,2.99
+KOR,"Korea, Rep.",1978,2.64
+KOR,"Korea, Rep.",1979,2.9
+KOR,"Korea, Rep.",1980,2.82
+KOR,"Korea, Rep.",1981,2.57
+KOR,"Korea, Rep.",1982,2.39
+KOR,"Korea, Rep.",1983,2.06
+KOR,"Korea, Rep.",1984,1.74
+KOR,"Korea, Rep.",1985,1.66
+KOR,"Korea, Rep.",1986,1.58
+KOR,"Korea, Rep.",1987,1.53
+KOR,"Korea, Rep.",1988,1.55
+KOR,"Korea, Rep.",1989,1.56
+KOR,"Korea, Rep.",1990,1.57
+KOR,"Korea, Rep.",1991,1.71
+KOR,"Korea, Rep.",1992,1.76
+KOR,"Korea, Rep.",1993,1.654
+KOR,"Korea, Rep.",1994,1.656
+KOR,"Korea, Rep.",1995,1.634
+KOR,"Korea, Rep.",1996,1.574
+KOR,"Korea, Rep.",1997,1.537
+KOR,"Korea, Rep.",1998,1.464
+KOR,"Korea, Rep.",1999,1.425
+KOR,"Korea, Rep.",2000,1.48
+KOR,"Korea, Rep.",2001,1.309
+KOR,"Korea, Rep.",2002,1.178
+KOR,"Korea, Rep.",2003,1.191
+KOR,"Korea, Rep.",2004,1.164
+KOR,"Korea, Rep.",2005,1.085
+KOR,"Korea, Rep.",2006,1.132
+KOR,"Korea, Rep.",2007,1.259
+KOR,"Korea, Rep.",2008,1.192
+KOR,"Korea, Rep.",2009,1.149
+KOR,"Korea, Rep.",2010,1.226
+KOR,"Korea, Rep.",2011,1.244
+KOR,"Korea, Rep.",2012,1.297
+KOR,"Korea, Rep.",2013,1.187
+KOR,"Korea, Rep.",2014,1.205
+KOR,"Korea, Rep.",2015,1.239
+KOR,"Korea, Rep.",2016,1.172
+KOR,"Korea, Rep.",2017,1.052
+KOR,"Korea, Rep.",2018,0.977
+KOR,"Korea, Rep.",2019,0.918
+KOR,"Korea, Rep.",2020,0.837
+SGP,Singapore,1960,5.76
+SGP,Singapore,1961,5.41
+SGP,Singapore,1962,5.21
+SGP,Singapore,1963,5.16
+SGP,Singapore,1964,4.97
+SGP,Singapore,1965,4.66
+SGP,Singapore,1966,4.46
+SGP,Singapore,1967,3.91
+SGP,Singapore,1968,3.53
+SGP,Singapore,1969,3.22
+SGP,Singapore,1970,3.07
+SGP,Singapore,1971,3.02
+SGP,Singapore,1972,3.04
+SGP,Singapore,1973,2.79
+SGP,Singapore,1974,2.35
+SGP,Singapore,1975,2.07
+SGP,Singapore,1976,2.11
+SGP,Singapore,1977,1.82
+SGP,Singapore,1978,1.79
+SGP,Singapore,1979,1.79
+SGP,Singapore,1980,1.82
+SGP,Singapore,1981,1.78
+SGP,Singapore,1982,1.74
+SGP,Singapore,1983,1.61
+SGP,Singapore,1984,1.62
+SGP,Singapore,1985,1.61
+SGP,Singapore,1986,1.43
+SGP,Singapore,1987,1.62
+SGP,Singapore,1988,1.96
+SGP,Singapore,1989,1.75
+SGP,Singapore,1990,1.83
+SGP,Singapore,1991,1.73
+SGP,Singapore,1992,1.72
+SGP,Singapore,1993,1.74
+SGP,Singapore,1994,1.71
+SGP,Singapore,1995,1.67
+SGP,Singapore,1996,1.66
+SGP,Singapore,1997,1.61
+SGP,Singapore,1998,1.48
+SGP,Singapore,1999,1.47
+SGP,Singapore,2000,1.6
+SGP,Singapore,2001,1.41
+SGP,Singapore,2002,1.37
+SGP,Singapore,2003,1.27
+SGP,Singapore,2004,1.26
+SGP,Singapore,2005,1.26
+SGP,Singapore,2006,1.28
+SGP,Singapore,2007,1.29
+SGP,Singapore,2008,1.28
+SGP,Singapore,2009,1.22
+SGP,Singapore,2010,1.15
+SGP,Singapore,2011,1.2
+SGP,Singapore,2012,1.29
+SGP,Singapore,2013,1.19
+SGP,Singapore,2014,1.25
+SGP,Singapore,2015,1.24
+SGP,Singapore,2016,1.2
+SGP,Singapore,2017,1.16
+SGP,Singapore,2018,1.14
+SGP,Singapore,2019,1.14
+SGP,Singapore,2020,1.1
