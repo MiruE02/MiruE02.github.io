@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "title": {
+      "text": "South Korea - base map",
+      "subtitle":["Mercator South Korea projection"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitlePadding":5,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/southkorea/southkorea-maps/master/gadm/json/skorea-provinces-geo.json",
+      "format": {"property": "features"}
+    },
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "darkgray",
+        "strokeWidth":0.5},
+    "encoding": {"tooltip":{"field":"properties.NAME_1"}}
+  }
