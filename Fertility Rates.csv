@@ -1,0 +1,206 @@
+﻿Country Name,Country Code,Fertility_Rates(2020)
+Aruba,abw,1.901
+Africa Eastern and Southern,afe,4.281855763
+Afghanistan,afg,4.176
+Africa Western and Central,afw,4.976545927
+Angola,ago,5.371
+Albania,alb,1.58
+United Arab Emirates,are,1.369
+Argentina,arg,2.233
+Armenia,arm,1.76
+Antigua and Barbuda,atg,1.978
+Australia,aus,1.581
+Austria,aut,1.44
+Azerbaijan,aze,1.7
+Burundi,bdi,5.237
+Belgium,bel,1.55
+Benin,ben,4.7
+Burkina Faso,bfa,5.029
+Bangladesh,bgd,1.987
+Bulgaria,bgr,1.56
+Bahrain,bhr,1.942
+"Bahamas, The",bhs,1.733
+Bosnia and Herzegovina,bih,1.243
+Belarus,blr,1.382
+Belize,blz,2.246
+Bermuda,bmu,1.3
+Bolivia,bol,2.651
+Brazil,bra,1.706
+Barbados,brb,1.628
+Brunei Darussalam,brn,1.796
+Bhutan,btn,1.931
+Botswana,bwa,2.796
+Central African Republic,caf,4.568
+Canada,can,1.4
+Switzerland,che,1.46
+Channel Islands,chi,1.512
+Chile,chl,1.611
+China,chn,1.7
+Cote d'Ivoire,civ,4.536
+Cameroon,cmr,4.443
+"Congo, Dem. Rep.",cod,5.718
+"Congo, Rep.",cog,4.321
+Colombia,col,1.771
+Comoros,com,4.073
+Cabo Verde,cpv,2.213
+Costa Rica,cri,1.721
+Caribbean small states,css,1.96481414
+Cuba,cub,1.59
+Curacao,cuw,1.6
+Cyprus,cyp,1.313
+Czechia,cze,1.71
+Germany,deu,1.53
+Djibouti,dji,2.627
+Denmark,dnk,1.67
+Dominican Republic,dom,2.299
+Algeria,dza,2.942
+Ecuador,ecu,2.38
+"Egypt, Arab Rep.",egy,3.236
+Euro area,emu,1.485280953
+Eritrea,eri,3.933
+Spain,esp,1.23
+Estonia,est,1.58
+Ethiopia,eth,4.049
+Finland,fin,1.37
+Fiji,fji,2.729
+France,fra,1.83
+Faroe Islands,fro,2.3
+"Micronesia, Fed. Sts.",fsm,2.968
+Gabon,gab,3.869
+United Kingdom,gbr,1.56
+Georgia,geo,2.046
+Ghana,gha,3.765
+Guinea,gin,4.552
+"Gambia, The",gmb,5.087
+Guinea-Bissau,gnb,4.331
+Equatorial Guinea,gnq,4.346
+Greece,grc,1.34
+Grenada,grd,2.023
+Greenland,grl,2.019
+Guatemala,gtm,2.777
+Guam,gum,2.275
+Guyana,guy,2.418
+"Hong Kong SAR, China",hkg,0.868
+Honduras,hnd,2.394
+Croatia,hrv,1.48
+Haiti,hti,2.842
+Hungary,hun,1.56
+Indonesia,idn,2.266
+India,ind,2.184
+Ireland,irl,1.63
+"Iran, Islamic Rep.",irn,2.142
+Iraq,irq,3.537
+Iceland,isl,1.72
+Israel,isr,2.9
+Italy,ita,1.24
+Jamaica,jam,1.95
+Jordan,jor,2.639
+Japan,jpn,1.34
+Kazakhstan,kaz,3.13
+Kenya,ken,3.365
+Kyrgyz Republic,kgz,3
+Cambodia,khm,2.453
+Kiribati,kir,3.493
+"Korea, Rep.",kor,0.837
+Kuwait,kwt,2.068
+Lao PDR,lao,2.583
+Lebanon,lbn,2.06
+Liberia,lbr,4.183
+Libya,lby,2.175
+St. Lucia,lca,1.411
+Liechtenstein,lie,1.46
+Sri Lanka,lka,2.174
+Lesotho,lso,3.07
+Lithuania,ltu,1.48
+Luxembourg,lux,1.37
+Latvia,lva,1.55
+"Macao SAR, China",mac,1.244
+St. Martin (French part),maf,1.81
+Morocco,mar,2.353
+Moldova,mda,1.278
+Madagascar,mdg,3.976
+Maldives,mdv,1.815
+Mexico,mex,2.079
+North Macedonia,mkd,1.3
+Mali,mli,5.693
+Malta,mlt,1.13
+Myanmar,mmr,2.121
+Montenegro,mne,1.75
+Mongolia,mng,2.834
+Mozambique,moz,4.713
+Mauritania,mrt,4.449
+Mauritius,mus,1.44
+Malawi,mwi,4.055
+Malaysia,mys,1.965
+Namibia,nam,3.293
+New Caledonia,ncl,1.923
+Niger,ner,6.735
+Nigeria,nga,5.248
+Nicaragua,nic,2.349
+Netherlands,nld,1.55
+Norway,nor,1.48
+Nepal,npl,1.845
+New Zealand,nzl,1.61
+Oman,omn,2.783
+Pakistan,pak,3.394
+Panama,pan,2.415
+Peru,per,2.212
+Philippines,phl,2.49
+Papua New Guinea,png,3.477
+Poland,pol,1.38
+Puerto Rico,pri,0.9
+"Korea, Dem. People's Rep.",prk,1.887
+Portugal,prt,1.4
+Paraguay,pry,2.383
+West Bank and Gaza,pse,3.489
+French Polynesia,pyf,1.913
+Qatar,qat,1.827
+Romania,rou,1.6
+Russian Federation,rus,1.505
+Rwanda,rwa,3.926
+Saudi Arabia,sau,2.238
+Sudan,sdn,4.289
+Senegal,sen,4.491
+Singapore,sgp,1.1
+Solomon Islands,slb,4.309
+Sierra Leone,sle,4.077
+El Salvador,slv,2.002
+Somalia,som,5.885
+Serbia,srb,1.48
+South Sudan,ssd,4.543
+Sao Tome and Principe,stp,4.214
+Suriname,sur,2.371
+Slovak Republic,svk,1.57
+Slovenia,svn,1.6
+Sweden,swe,1.66
+Eswatini,swz,2.919
+Seychelles,syc,2.29
+Syrian Arab Republic,syr,2.734
+Chad,tcd,5.553
+Togo,tgo,4.199
+Thailand,tha,1.501
+Tajikistan,tjk,3.52
+Turkmenistan,tkm,2.701
+Timor-Leste,tls,3.853
+Tonga,ton,3.481
+Trinidad and Tobago,tto,1.699
+Tunisia,tun,2.151
+Turkiye,tur,2.039
+Tanzania,tza,4.773
+Uganda,uga,4.703
+Ukraine,ukr,1.217
+Uruguay,ury,1.952
+United States,usa,1.6375
+Uzbekistan,uzb,2.9
+St. Vincent and the Grenadines,vct,1.854
+"Venezuela, RB",ven,2.23
+Virgin Islands (U.S.),vir,2.03
+Vietnam,vnm,2.046
+Vanuatu,vut,3.707
+Samoa,wsm,3.785
+Kosovo,xkx,1.95
+"Yemen, Rep.",yem,3.614
+South Africa,zaf,2.358
+Zambia,zmb,4.496
+Zimbabwe,zwe,3.46
+,,
