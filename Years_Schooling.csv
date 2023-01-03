@@ -1,0 +1,165 @@
+Economy,Year,Country Code,School life Expectancy,Continent
+Aruba,2012,ABW,14.21070957,North America
+Afghanistan,2018,AFG,7.716469765,Asia
+Angola,2011,AGO,7.286789894,Africa
+Albania,2020,ALB,15.31414032,Europe
+United Arab Emirates,2020,ARE,16.53561974,Asia
+Argentina,2019,ARG,19.23380089,South America
+Armenia,2020,ARM,13.81657982,Asia
+Antigua and Barbuda,2012,ATG,15.65756989,North America
+Australia,2019,AUS,22.1906395,Oceania
+Austria,2019,AUT,16.39508057,Europe
+Azerbaijan,2020,AZE,13.63412952,Asia
+Burundi,2018,BDI,10.89515018,Africa
+Belgium,2019,BEL,20.70512962,Europe
+Benin,2016,BEN,11.44209003,Africa
+Burkina Faso,2020,BFA,9.109199524,Africa
+Bangladesh,2020,BGD,13.00008011,Asia
+Bulgaria,2019,BGR,14.17173004,Europe
+Bahrain,2019,BHR,17.00485992,Asia
+Belarus,2018,BLR,15.66329002,Europe
+Belize,2020,BLZ,13.29214954,North America
+Bermuda,2015,BMU,13.45886993,North America
+Brazil,2019,BRA,16.03347969,South America
+Barbados,2011,BRB,16.69400024,North America
+Brunei Darussalam,2020,BRN,14.43284988,Asia
+Bhutan,2018,BTN,13.46644974,Asia
+Central African Republic,2012,CAF,5.600850105,Africa
+Canada,2019,CAN,16.89101982,North America
+Switzerland,2019,CHE,16.40518951,Europe
+Chile,2019,CHL,16.96546936,South America
+China,2010,CHN,12.39836025,Asia
+Cote d'Ivoire,2019,CIV,9.742429733,Africa
+Cameroon,2016,CMR,11.33539009,Africa
+"Congo, Dem. Rep.",2013,COD,8.522999763,Africa
+"Congo, Rep.",2012,COG,10.58283043,Africa
+Colombia,2019,COL,14.75887966,South America
+Comoros,2014,COM,11.11118031,Africa
+Cabo Verde,2018,CPV,13.00302029,Africa
+Costa Rica,2019,CRI,17.05911064,North America
+Cuba,2020,CUB,15.10297966,North America
+Curacao,2013,CUW,18.3158493,North America
+Cyprus,2019,CYP,15.69172001,Asia
+Czech Republic,2019,CZE,16.7543602,Europe
+Germany,2019,DEU,17.00415993,Europe
+Djibouti,2011,DJI,6.450369835,Africa
+Denmark,2019,DNK,19.34136963,Europe
+Dominican Republic,2017,DOM,14.98606968,North America
+Algeria,2011,DZA,14.57748985,Africa
+Ecuador,2019,ECU,14.94892979,South America
+"Egypt, Arab Rep.",2018,EGY,13.62018967,Africa
+Eritrea,2015,ERI,7.32212019,Africa
+Spain,2019,ESP,18.43042946,Europe
+Estonia,2019,EST,16.76152992,Europe
+Ethiopia,2012,ETH,7.91850996,Africa
+Finland,2019,FIN,19.85631943,Europe
+France,2019,FRA,16.15681076,Europe
+United Kingdom,2019,GBR,17.82233047,Europe
+Georgia,2020,GEO,15.93873978,Asia
+Ghana,2020,GHA,12.05702972,Africa
+Guinea,2014,GIN,7.670149803,Africa
+"Gambia, The",2010,GMB,7.927979946,Africa
+Greece,2019,GRC,20.05644035,Europe
+Grenada,2018,GRD,19.1821003,North America
+Guatemala,2019,GTM,10.48863029,North America
+Guyana,2012,GUY,11.5916996,South America
+"Hong Kong SAR, China",2020,HKG,17.57220078,Asia
+Honduras,2019,HND,10.72126961,North America
+Croatia,2019,HRV,15.90723991,Europe
+Hungary,2019,HUN,13.98377991,Europe
+Indonesia,2018,IDN,13.67323971,Asia
+India,2020,IND,11.94211006,Asia
+Ireland,2019,IRL,19.23660088,Europe
+"Iran, Islamic Rep.",2017,IRN,14.57489967,Asia
+Iceland,2019,ISL,20.27153015,Europe
+Israel,2019,ISR,16.72323036,Asia
+Italy,2019,ITA,16.5740509,Europe
+Jamaica,2015,JAM,13.34766006,North America
+Jordan,2020,JOR,10.84105015,Asia
+Japan,2018,JPN,15.16100025,Asia
+Kazakhstan,2020,KAZ,16.04249954,Asia
+Kyrgyz Republic,2020,KGZ,13.43486977,Asia
+St. Kitts and Nevis,2015,KNA,18.85272026,North America
+"Korea, Rep.",2019,KOR,16.06004906,Asia
+Kuwait,2015,KWT,16.07461929,Asia
+Lao PDR,2020,LAO,9.9354496,Asia
+St. Lucia,2020,LCA,13.35690022,North America
+Liechtenstein,2019,LIE,14.16571045,Europe
+Sri Lanka,2018,LKA,14.46010971,Asia
+Lesotho,2017,LSO,12.53835011,Africa
+Lithuania,2019,LTU,16.73283958,Europe
+Luxembourg,2019,LUX,14.38416004,Europe
+Latvia,2019,LVA,16.7930603,Europe
+"Macao SAR, China",2020,MAC,17.70336914,Asia
+Morocco,2020,MAR,13.91057014,Africa
+Moldova,2020,MDA,14.75263023,Europe
+Madagascar,2018,MDG,10.19260979,Africa
+Maldives,2019,MDV,14.17418957,Asia
+Mexico,2019,MEX,15.21201038,North America
+Marshall Islands,2019,MHL,10.37392998,Oceania
+North Macedonia,2018,MKD,13.72189999,Europe
+Mali,2017,MLI,6.797229767,Africa
+Malta,2019,MLT,17.38516045,Europe
+Myanmar,2018,MMR,10.86946011,Asia
+Montenegro,2020,MNE,15.60083008,Europe
+Mongolia,2019,MNG,15.57209015,Asia
+Mozambique,2017,MOZ,9.48581028,Africa
+Mauritania,2019,MRT,9.570549965,Africa
+Mauritius,2017,MUS,15.71514988,Africa
+Malawi,2011,MWI,10.83279991,Africa
+Malaysia,2019,MYS,13.98488998,Asia
+Niger,2017,NER,5.73112011,Africa
+Nigeria,2011,NGA,8.175840378,Africa
+Netherlands,2018,NLD,18.84799957,Europe
+Norway,2019,NOR,18.88678932,Europe
+Nepal,2019,NPL,13.3839798,Asia
+New Zealand,2019,NZL,20.80978012,Oceania
+Oman,2020,OMN,15.04283047,Asia
+Pakistan,2019,PAK,8.102529526,Asia
+Panama,2016,PAN,13.46866035,North America
+Peru,2017,PER,14.89291954,South America
+Philippines,2017,PHL,13.49940968,Asia
+Palau,2013,PLW,17.17789078,Oceania
+Poland,2019,POL,16.7696991,Europe
+Puerto Rico,2018,PRI,17.99130058,North America
+Portugal,2019,PRT,16.9929409,Europe
+Paraguay,2010,PRY,12.52711964,South America
+West Bank and Gaza,2020,PSE,14.26461983,Asia
+Qatar,2020,QAT,14.53326988,Asia
+Romania,2019,ROU,14.7216301,Europe
+Russian Federation,2019,RUS,15.97797966,Europe
+Rwanda,2019,RWA,11.22247028,Africa
+Saudi Arabia,2020,SAU,16.20259094,Asia
+Sudan,2015,SDN,7.348589897,Africa
+Senegal,2020,SEN,9.478469849,Africa
+Singapore,2019,SGP,16.71208,Asia
+El Salvador,2018,SLV,11.51648045,North America
+San Marino,2020,SMR,11.75339031,Europe
+Serbia,2020,SRB,14.97856998,Europe
+Sao Tome and Principe,2015,STP,12.52567959,Africa
+Slovak Republic,2019,SVK,15.01887989,Europe
+Slovenia,2019,SVN,18.41757965,Europe
+Sweden,2019,SWE,20.53377914,Europe
+Eswatini,2013,SWZ,12.19466972,Africa
+Sint Maarten (Dutch part),2014,SXM,12.39712048,North America
+Seychelles,2020,SYC,15.11960983,Africa
+Syrian Arab Republic,2013,SYR,9.074879646,Asia
+Chad,2015,TCD,5.880819798,Africa
+Togo,2017,TGO,11.53635979,Africa
+Thailand,2016,THA,15.80541992,Asia
+Tajikistan,2013,TJK,10.70042038,Asia
+Turkmenistan,2020,TKM,12.99555016,Asia
+Timor-Leste,2010,TLS,12.0026598,Asia
+Tonga,2020,TON,17.34658051,Oceania
+Tunisia,2016,TUN,16.02018929,Africa
+Turkiye,2019,TUR,17.85655022,Asia
+Tanzania,2020,TZA,9.296609879,Africa
+Ukraine,2014,UKR,15.08526993,Europe
+Uruguay,2019,URY,20.42174911,South America
+United States,2019,USA,16.93508911,North America
+Uzbekistan,2019,UZB,12.37631989,Asia
+St. Vincent and the Grenadines,2015,VCT,14.58530998,North America
+British Virgin Islands,2018,VGB,12.35523033,North America
+"Yemen, Rep.",2011,YEM,7.651040077,Asia
+South Africa,2019,ZAF,13.9843998,Africa
+Zimbabwe,2013,ZWE,11.13844013,Africa
