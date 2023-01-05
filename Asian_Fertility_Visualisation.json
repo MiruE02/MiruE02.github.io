@@ -9,6 +9,12 @@
     "anchor": "start",
     "color": "black"
   },
+  "config": {
+    "background":"#FeFeF8"},
+
+  "height": 300,
+    "width": 400,
+
   "data": {
     "values": [
       {
@@ -1479,9 +1485,8 @@
   },
   "mark": {"type": "line", "point": true},
   "encoding": {
-    "x": {"field": "Year", "type": "nominal"},
+    "x": {"field": "Year", "type": "nominal", "axis": {"labelAngle": 0,"labelOverlap":"true"}},
     "y": {"field": "Fertility Rate", "type": "quantitative"},
     "color": {"field": "Country Name", "type": "nominal"}
-  },
-  "config": {}
+  }
 }

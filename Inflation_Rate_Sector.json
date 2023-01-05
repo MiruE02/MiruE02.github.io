@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Inflation Rate per sector",
+  "height": 300,
+  "width": 300,
+  "config": {"background": "#FeFeF8"},
+  "data": {
+    "values": [
+      {
+        "Sector": "Housing, water, electricity, gas and other fuels",
+        "Rates": 26.6
+      },
+      {"Sector": "Food and non-alcoholic beverages", "Rates": 16.2},
+      {
+        "Sector": "Furniture, household equipment and maintenance",
+        "Rates": 10.5
+      },
+      {"Sector": "Restaurants and hotels", "Rates": 9.6},
+      {"Sector": "Transport", "Rates": 8.9},
+      {"Sector": "Clothing and footwear", "Rates": 8.5},
+      {"Sector": "Alcoholic beverages and tobacco", "Rates": 6.1},
+      {"Sector": "Recreation and culture", "Rates": 5.8},
+      {"Sector": "Miscellaneous goods and services", "Rates": 5.1},
+      {"Sector": "Health", "Rates": 4.2},
+      {"Sector": "Education", "Rates": 3.2},
+      {"Sector": "Communication", "Rates": 3.2}
+    ]
+  },
+  
+  "mark": { "type": "line", 
+  "point" : true}, 
+
+  "encoding": {
+    "x": {"field": "Rates", "type": "quantitative", "title": "Inflation (%)"},
+    "y": {"field": "Sector", "type": "nominal", "title": "Sectors"},
+    "tooltip": {"field": "Rates", "type": "nominal"}
+
+  }
+}

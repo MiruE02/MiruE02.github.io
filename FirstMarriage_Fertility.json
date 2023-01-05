@@ -1,0 +1,95 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+      "text": "Age of First marriage for women against Fertility Rates",
+      "subtitle":["Age of First Marriage for Women (x), Fertility Rates (y). ","Size of points based on population", "Source: The World Bank"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+    "config": {
+      "background":"#FeFeF8",
+      "view": {
+        "stroke": "transparent"}},
+    "height": 300,
+    "width": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/First%20Marriage.csv"},
+      "transform" : [{
+      "lookup": "Country",
+      "from": {
+      "key": "Country Name",
+      "fields": ["Population(2020)", "Fertility(2020)"],
+      "data": {
+        "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Population%3AFertilityRates.csv"
+          }
+        }
+      }],
+
+  "layer":[
+{
+    "mark": {
+      "type":"circle",
+      "color":"green",
+      "opacity":0.7},
+  
+    "encoding": {
+      "x": {
+        "field": "Age at first marriage, female", 
+        "type": "quantitative",
+        "scale": {"domain": [16, 35]},
+        "axis":{"grid": false},
+        "title":null},
+  
+      "y": {
+        "field": "Fertility(2020)", 
+        "type": "quantitative",     
+        "scale": {"domain": [0, 8]},
+        "axis":{"grid": false},
+        "title":null},
+  
+      "size": {
+        "field": "Population(2020)", 
+        "type": "quantitative",
+        "title":"Prison Rate",
+        "scale": {"range": [10, 500]},
+        "legend":null},
+      
+      "color": {"field": "Continent", "title": "Continents"},
+
+      "tooltip":[
+        {"field":"Country", "type": "ordinal", "title":"Country"},
+        {"field":"Fertility(2020)", "type": "quantitative", "title":"Fertility Rate", "format":".2f"},
+        {"field":"Age at first marriage, female", "type": "quantitative", "title":"Age at first marriage - Female", "format":".1f"},
+        {"field":"Population(2020)", "type": "quantitative", "title":"Population", "format":","}
+
+      ]
+     }
+  },
+  {
+      "mark": {"type": "line", "color": "grey"},
+
+      "transform": [{"regression": "Age at first marriage, female", "on": "Fertility(2020)"}],
+      
+      "encoding": {
+        "x": {"field": "Age at first marriage, female", "type": "quantitative"},
+        "y": {"field": "Fertility(2020)", "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [{"regression": "Age at first marriage, female", "on": "Fertility(2020)", "params": true},
+      {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}],
+    "mark": {
+      "type": "text",
+      "color": "grey",
+      "x": "width",
+      "align": "right",
+      "y": -5
+    },
+    "encoding": {
+      "text": {"type": "nominal", "field": "R2"}
+    }
+    }]}

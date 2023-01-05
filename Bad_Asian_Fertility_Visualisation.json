@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A simple bar chart with embedded data.",
+
+
   "title": {
     "text": "Exchange rates",
     "subtitle": "Different countries' fertility rates from 1960-2020 against the US dollar from 2000-2021, Source: The World Bank",
@@ -9,6 +11,13 @@
     "anchor": "start",
     "color": "black"
   },
+
+  "height": 300,
+    "width": 400,
+
+    "config": {
+      "background":"#FeFeF8"},
+
   "data": {
     "values": [
       {
@@ -1479,9 +1488,8 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Year", "type": "nominal"},
+    "x": {"field": "Year", "type": "nominal", "axis": {"labelAngle": 0,"labelOverlap":"true"}},
     "y": {"field": "Fertility Rate", "type": "quantitative"},
     "color": {"field": "Country Name", "type": "nominal"}
-  },
-  "config": {}
+  }
 }

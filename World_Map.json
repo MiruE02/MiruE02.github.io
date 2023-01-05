@@ -1,0 +1,73 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Names of countries imperfectly matched. US vs USA for example",
+
+  "title": {
+    "text": "Figure 1: World Map",
+    "subtitle":["Fertility Rates as of 2020",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"
+  },
+
+  "config": {
+    "background":"#FeFeF8",
+    "view": {"stroke": "transparent"}},
+  
+  "width": 600,
+  "height": 300,
+  
+  "data": {
+    "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"}
+      },
+
+    "transform": [
+      {"calculate":"parseInt(datum.id)", "as":"id_N"},
+    
+      {"lookup": "id_N",
+        "from": {
+          "key": "id",
+          "fields": ["alpha3", "name"],
+          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"}}
+          },
+
+      {"lookup": "alpha3",
+        "from": {
+          "key": "Country Code",
+          "fields": ["Fertility_Rates(2020)", "Country Code"],
+          "data": {"url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Fertility%20Rates.csv"}}
+          }    
+      
+      ],    
+
+  "projection": {
+    "type": "naturalEarth1"},
+  
+  "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth":0.1},
+  
+  "encoding": {
+
+    "tooltip":[
+        {"field":"name", "title":"Country"},
+        {"field":"Fertility_Rates(2020)", "title":"Fertility Rates", "type":"quantitative","format":".2f"}],
+
+    "color":{
+      "field":"Fertility_Rates(2020)",
+      "title":"Fertility Rates",
+      "type": "quantitative",
+      "scale":{
+        "scheme": "turbo", 
+        "nice" : true,         
+        "domain":[0,6]},
+      "legend":{
+        "orient": "bottom",
+        "direction": "horizontal"}}
+  }
+}

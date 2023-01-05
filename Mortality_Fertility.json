@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Mortality Rates against Fertility Rates",
+    "subtitle": ["Fertility Rates (x), Mortality Rates (y).", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+  "config": {"background": "#FeFeF8", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Fertility_Mortality.csv"
+  },
+  "transform": [
+    {
+      "lookup": "Country Code",
+      "from": {
+        "key": "Country Code",
+        "fields": ["Population Rate", "year"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Population1.csv"
+        }
+      }
+    },
+    {"filter": "datum.Year==selectedYear"}
+  ],
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2020,
+      "bind": {
+        "input": "range",
+        "min": 1990,
+        "max": 2020,
+        "step": 1,
+        "name": "Select year:"
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "circle", "color": "green", "opacity": 0.7},
+      "encoding": {
+        "x": {
+          "field": "Fertility Rate",
+          "type": "quantitative",
+          "scale": {"domain": [0, 9]},
+          "axis": {"grid": false},
+          "title": null
+        },
+        "y": {
+          "field": "Mortality Rate",
+          "type": "quantitative",
+          "scale": {"domain": [0, 350]},
+          "axis": {"grid": false},
+          "title": null
+        },
+        "size": {
+        "field": "Population Rate", 
+        "type": "quantitative",
+        "title":"Population",
+        "scale": { "range": [10, 800]},
+        "legend":null},
+
+        "color": {"field": "Continent", "title": "Continents"},
+        "tooltip": [
+          {"field": "Country Name", "type": "ordinal", "title": "Country"},
+          {
+            "field": "Fertility Rate",
+            "type": "quantitative",
+            "title": "Fertility Rate",
+            "format": ".2f"
+          },
+          {
+            "field": "Mortality Rate",
+            "type": "quantitative",
+            "title": "Mortality Rate",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ]
+}

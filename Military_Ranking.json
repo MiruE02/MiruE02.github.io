@@ -1,1 +1,40 @@
-[{"Country Name": "United States", "Military spending in billion U.S. dollars": 801.0}, {"Country Name": "China*", "Military spending in billion U.S. dollars": 293.0}, {"Country Name": "India", "Military spending in billion U.S. dollars": 76.6}, {"Country Name": "United Kingdom", "Military spending in billion U.S. dollars": 68.4}, {"Country Name": "Russia", "Military spending in billion U.S. dollars": 65.9}, {"Country Name": "France", "Military spending in billion U.S. dollars": 56.6}, {"Country Name": "Germany", "Military spending in billion U.S. dollars": 56.0}, {"Country Name": "Saudi Arabia*", "Military spending in billion U.S. dollars": 55.6}, {"Country Name": "Japan", "Military spending in billion U.S. dollars": 54.1}, {"Country Name": "South Korea", "Military spending in billion U.S. dollars": 50.2}]
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Country Rankings by Military Expenditure 2021",
+      "subtitle": "Top 10 Countries by Military Spending, Source: Statista",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "config": {
+      "background":"#FeFeF8"},
+      
+    "width": 400,
+    "height": 300,
+    "data": {
+      "values": [{"Country Name": "USA", "Military_Spending": 801.0}, {"Country Name": "China", "Military_Spending": 293.0}, {"Country Name": "India", "Military_Spending": 76.6}, {"Country Name": "UK", "Military_Spending": 68.4}, {"Country Name": "Russia", "Military_Spending": 65.9}, {"Country Name": "France", "Military_Spending": 56.6}, {"Country Name": "Germany", "Military_Spending": 56.0}, {"Country Name": "Saudi Arabia", "Military_Spending": 55.6}, {"Country Name": "Japan", "Military_Spending": 54.1}, {"Country Name": "S.Korea", "Military_Spending": 50.2}]
+    },
+    "encoding": {
+      "y": {
+       "field": "Country Name",
+        "type": "nominal",
+        "sort": "quantitative",
+        "title": "Country Name"
+  
+      },
+      "x": {
+         "field": "Military_Spending",
+        "type": "quantitative",
+        "title": "Military Spending in billion U.S dollars"
+      }
+    },
+    "layer": [
+      {"mark": {"type": "bar", "color": "rgb(0,47,167"}},
+      {
+        "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3 },
+        "encoding": {"text": {"field": "Military_Spending", "type": "quantitative"}}
+      }
+    ]
+  }

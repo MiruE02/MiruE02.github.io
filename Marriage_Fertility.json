@@ -1,0 +1,72 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Various US measures state by state",
+
+  "title": {
+    "text": "Marriage and Fertility Rates - APAC Nations",
+    "subtitle":"Marriages per 1,000 people (x), and Fertility Rates (y)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {
+    "background":"#FeFeF8"},
+    
+  "data": {"url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Marriage%3AFertility.csv"},
+   
+  "height": 300,
+  "width": 300,
+
+"layer":[
+{
+  "mark": {
+    "type":"circle",
+    "color":"rgb(0,47,167)",
+    "size":100},
+ 
+  "encoding": {
+    "x": {
+      "field": "Crude_Marriage_Rates(2019)", 
+      "type": "quantitative",
+      "scale": {"domain": [0, 10]},
+      "title": null
+      },
+
+    "y": {
+      "field": "Fertility_Rates(2019)", 
+      "type": "quantitative",
+      "title":null
+      },
+      
+"tooltip":[
+        {"field":"country", "type": "ordinal", "title":"Country"},
+        {"field":"Crude_Marriage_Rates(2019)", "type": "quantitative", "title":"Marriage Rate", "format":".2f"},
+        {"field":"Fertility_Rates(2019)", "type": "quantitative", "title":"Fertility Rates", "format":".2f"}]
+
+  }},
+    {
+      "mark": {"type": "line", "color": "grey"},
+
+      "transform": [{"regression": "Crude_Marriage_Rates(2019)", "on": "Fertility_Rates(2019)"}],
+      
+      "encoding": {
+        "x": {"field": "Crude_Marriage_Rates(2019)", "type": "quantitative"},
+        "y": {"field": "Fertility_Rates(2019)", "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [{"regression": "Crude_Marriage_Rates(2019)", "on": "Fertility_Rates(2019)", "params": true},
+      {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}],
+    "mark": {
+      "type": "text",
+      "color": "grey",
+      "x": "width",
+      "align": "right",
+      "y": -5
+    },
+    "encoding": {
+      "text": {"type": "nominal", "field": "R2"}
+    }
+    }]}

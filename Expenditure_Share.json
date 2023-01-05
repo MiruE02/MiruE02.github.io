@@ -1,0 +1,52 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":"Expenditure Shares of High/Low income Households",
+
+    "config": {
+      "background":"#FeFeF8"},
+      
+    "data": {
+      "values": [{"Division": "Housing, water, electricity, gas and other fuels", "Low-income-households":268,"High-income-households":196}, 
+      
+      {"Division": "Food and non-alcoholic beverages", "Low-income-households":157, "High-income-households":92}, 
+      
+      {"Division": "Furniture, household equipment and maintenance",  "Low-income-households":49, "High-income-households":53}, 
+      
+      {"Division": "Restaurants and hotels","Low-income-households": 81, "High-income-households":122 }, 
+      
+      {"Division": "Transport", "Low-income-households":90, "High-income-households":150}, 
+      
+      {"Division": "Clothing and footwear", "Low-income-households":51, "High-income-households":56},
+      
+      {"Division": "Alcoholic beverages and tobacco","Low-income-households":53, "High-income-households":35}, 
+      
+      {"Division": "Recreation and culture", "Low-income-households":107, "High-income-households":133}, 
+      
+      {"Division": "Miscellaneous goods and services", "Low-income-households":92, "High-income-households":108 }, 
+      
+      {"Division": "Health", "Low-income-households":19, "High-income-households":21}, 
+      
+      {"Division": "Education", "Low-income-households":4, "High-income-households":12}, 
+      
+      {"Division": "Communication", "Low-income-households":29, "High-income-households":22}]
+    },
+      "transform": [{"fold": ["Low-income-households", "High-income-households"]}],  
+      "mark": "bar",
+      "encoding": {  
+        "x": {
+          "field" : "value",
+          "type": "quantitative",
+          "title": "Expenditure Share as of 1,000"
+        },
+        "y": {
+          "field": "Division",
+          "type": "nominal",
+          "title": "Sectors"
+        },
+        "color": {"field": "key", "type": "nominal"},
+        "legends" : {"title" : "hi"}
+        
+      }
+  
+    }
+  

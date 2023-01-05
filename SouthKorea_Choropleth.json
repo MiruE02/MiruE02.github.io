@@ -1,0 +1,104 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "title": {
+      "text": "South Korea - base map",
+      "subtitle":["Mercator South Korea projection"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitlePadding":5,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "config": {
+      "background":"#FeFeF8"},
+      
+    "data": {
+      "url": "https://raw.githubusercontent.com/southkorea/southkorea-maps/master/gadm/json/skorea-provinces-geo.json",
+      "format": {"property": "features"}
+    },
+    "projection": {"type": "mercator"},
+    "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "darkgray",
+        "strokeWidth":0.5},
+    "encoding": {"tooltip":{"field":"properties.NAME_1"}},
+
+    "transform": [
+    {
+      "filter": {
+        "field": "properties.NAME_1",
+        "oneOf": [
+          "Busan",
+          "Chungcheongbuk-do",
+          "Chungcheongnam-do",
+          "Daegu",
+          "Daejeon",
+          "Gangwon-do",
+          "Gwangju",
+          "Gyeonggi-do",
+          "Gyeongsangbuk-do",
+          "Gyeongsangnam-do",
+          "Incheon",
+          "Jeju",
+          "Jeollabuk-do",
+          "Jeollanam-do",
+          "Seoul",
+          "Ulsan"
+
+
+        ]
+      }
+    },
+    {
+      "lookup": "properties.NAME_1",
+      "from": {
+        "data": {
+          "values": [{"NAME_1": "Seoul", "2021": 9472127}, {"NAME_1": "Busan", "2021": 3324335}, {"NAME_1": "Daegu", "2021": 2387911}, {"NAME_1": "Incheon", "2021": 2957044}, {"NAME_1": "Gwangju", "2021": 1475262}, {"NAME_1": "Daejeon", "2021": 1479740}, {"NAME_1": "Ulsan", "2021": 1120753}, {"NAME_1": "Gyeonggi-do", "2021": 13652529}, {"NAME_1": "Gangwon-do", "2021": 1521890}, {"NAME_1": "Chungcheongbuk-do", "2021": 1624764}, {"NAME_1": "Chungcheongnam-do", "2021": 2175960}, {"NAME_1": "Jeollabuk-do", "2021": 1787053}, {"NAME_1": "Jeollanam-do", "2021": 1778124}, {"NAME_1": "Gyeongsangbuk-do", "2021": 2635314}, {"NAME_1": "Gyeongsangnam-do", "2021": 3305931}, {"NAME_1": "Jeju", "2021": 673107}]},
+
+        "key": "NAME_1",
+        "fields": [
+          "NAME_1",
+          "2021"
+        ]
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator"
+  },
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#212121",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "color": {
+      "field": "2021",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "Oranges", 
+        "nice" : true 
+      },
+      "legend": {
+        "title": "Population"
+        
+      }
+    },
+    "tooltip": [
+      {
+        "field": "NAME_1",
+        "type": "nominal",
+        "title": "Name"
+      },
+      {
+        "field": "2021",
+        "type": "nominal",
+        "title": "Population"
+      }
+    ]
+  }
+}
+  

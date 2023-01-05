@@ -6,37 +6,119 @@
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
-/* Set the background color for my page: */
+/* Choose the appearance of the tags, h1, h3 and p: */
+    
 body{
-    background-color: rgb(233, 233, 233);
- 
+    background-color: #FeFeF8;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 5px;
+
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+
+.head{
+    text-align: center;
+    position: relative;
+
+
+}
+/*Nav Bar*/
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Playfair Display', serif;;
 }
 
 
-/* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+.nav-links{
+    flex:1;
     text-align: center;
 }
-    
-.myWeek1{
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px; 
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #2e2f2f;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2e2f2f;
+    display: block;
     margin: auto;
-    max-width: 600px;
-    background-color: bisque;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
 }
 
 
+h1, h3, p{
+    color: #2e2f2f;
+}
+
+h1{font-size:60px}
+h2{font-size:45px}
+h3{font-size:30px}
+p{font-size:20px}
+
 /* Set the apperance of the class, chart */
+
+.grid-container {
+    margin-left: -100px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    grid-row-end: auto;
+    height: 300px;
+  }
 .chart{
-    background-color: orange;
-    width:330px;
+    background-color: #FeFeF8;
+    width: auto;
+    margin: auto;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
-    border-color: red;
-
-    
+    border-color: #FeFeF8;
 }
-    
+
+.myWeek7{
+    margin-top: 590px;
+    max-width: 900px;
+    text-align: center;
+    background-color: #FeFeF8;
+    width: 100%;
+}

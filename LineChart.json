@@ -1,0 +1,109 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multiple line chart",
+  "width": 600,
+  "height": 300,
+"title": {"text": "Fertility Rate of Countries, 1960-2020"},
+  "config": {
+    "background":"#FeFeF8",
+    "view": {
+      "stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/World_Fertility_Rate_All_Years2.csv"
+  },
+ 
+  "transform": [{
+    "lookup": "Country Code",
+    "from": {
+      "key": "Country Code",
+      "fields": ["Continent"],
+      "data": {
+        "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/Continents-2.csv"
+          }
+        }
+      },
+      {"filter": "datum.Continent == select"}
+ 
+    ],
+ 
+  "params": [
+    {
+      "name":"select",
+      "value":"Continent",
+      "bind":{
+        "input": "select",
+        "options":[
+          "Africa",
+          "Asia",
+          "Europe",
+          "North America",
+          "Oceania",
+          "South America"
+        ]
+      }
+      }
+  ],
+   
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "timeUnit": "year",
+      "type": "temporal",
+      "scale": {"domain": [1960, 2020]},
+      "axis": {"title": "Year", "grid": false}
+    },
+    "y": {
+      "field": "Fertility Rate",
+      "type": "quantitative",
+      "axis": {"title": "Fertility Rate"}
+    },    
+"color": {
+      "condition": {"param": "hover", "field":"Country Name", "type":"nominal", "legend": null},
+      "value": "grey"},
+    "opacity": {
+      "condition": {"param": "hover","value": 1},
+      "value": 0.2
+    }
+  },
+  "layer": [{
+        "description": "transparent layer to make it easier to trigger selection",
+    "params": [{
+      "name": "hover",
+      "value": [{"Country Name": "Angola"}],
+      "select": {
+        "type": "point",
+        "fields": ["Country Name"],
+        "on": "mouseover"
+      }
+    }],
+    "mark": {"type": "line", "strokeWidth": 1, "stroke": "transparent"}
+},
+{"mark": "line",
+ 
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "timeUnit": "year",
+      "type": "temporal",
+      "axis": {"title": "Year", "grid": false}
+    },
+    "y": {
+      "field": "Fertility Rate",
+      "type": "quantitative",
+      "axis": {"title": "Fertility Rate", "grid": false}
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "timeUnit": "year",
+        "type": "temporal",
+        "title": "Year"
+      },
+      {"field": "Country Name", "type": "nominal", "title": "Country"},
+      {
+        "field": "Fertility Rate",
+        "type": "quantitative",
+        "title": "Fertility Rate",
+        "format": ".2f"
+      }]
+}}]}

@@ -1,5 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "config": {
+    "background":"#FeFeF8"},
+    
   "title": {
     "text": "IMF lending outstanding as a percent of global GDP ",
     "subtitle": "Credit outstanding to all members as a percentage of global GDP Source IMF ",

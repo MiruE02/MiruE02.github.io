@@ -11,6 +11,10 @@
       "anchor": "middle",
       "color": "black"
     },
+
+    "config": {
+      "background":"#FeFeF8"},
+      
     "data": {
       "url": "https://raw.githubusercontent.com/southkorea/southkorea-maps/master/gadm/json/skorea-provinces-geo.json",
       "format": {"property": "features"}

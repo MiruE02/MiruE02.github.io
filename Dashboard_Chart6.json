@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "background":"#FeFeF8"},
+      
+    "data": {
+      "url": "https://raw.githubusercontent.com/MiruE02/MiruE02.github.io/main/data_ONS-P4TG.json",
+      "format": {"type": "json", "property": "years"}
+    },
+    "title": {
+      "text": "UK Trade in Goods - Pharmaceutical products",
+      "subtitle": "1997-2021, Source: ONS",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "width": 200,
+    "height": 200,
+    "mark": {"type": "line", "color": "rgb(0,0,0"},
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "axis": {"grid": false},
+        "title": ""
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {"grid": false},
+        "title": "Total trade value in millions (£)"
+      }
+    }
+  }

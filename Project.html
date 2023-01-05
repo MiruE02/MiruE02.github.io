@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Document</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">PORTFOLIO</a></li>
+                <li><a href="Project.html">PROJECT</a></li>
+                <li><a href="https://github.com/MiruE02/MiruE02.github.io">GITHUB</a></li>
+                <li><a href="https://rapidcharts.io/datascience">COURSE</a></li>
+
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="myWeek1">
+        <h1>Project - Understanding the decline in global fertility rates</h1>
+        <h2> Aims of Projects</h2>
+        <p> Fertility rates are very important for the stability and growth of an economy. 
+            As fertility rates fall, working-age populations eventually fall as well, which can lead to labor shortages in countries where the working-age populations are in decline. 
+            This is why some see the current situation of declining fertility rates as a real issue. 
+            The main aims of this project are to evaluate the accuracy of some of the most commonly cited reasons behind the convergence in fertility rates and to show why there is infact differences in fertility rates amongst countries.
+            <p>   
+
+        <h3> Current Trends </h2>
+        <h4>Figure 1 - Fertility Rate trends</h3>
+        <div class="chart" id="Chart1"></div>
+        <p>Figure 1 is a line chart showing the fertility rate changes experienced by countries across the world with the data coming from <a href="https://data.worldbank.org/indicator/SP.DYN.TFRT.IN">the World Bank</a>. 
+            The line chart shows that every continent has experienced a fertility rate decline over the past 60 years with Africa remaining as the continent with the highest fertility rates. 
+            The data required tidying such as removing needless datapoints which was done directly in excel and it needed to be converted from wide-form to long-form which allowed vega to read it, the code for such is here: <a class="textLink" href="https://colab.research.google.com/drive/1UlToXOKr9Hk2pOuY54aXdq3lncJSXG_D#scrollTo=9hoN9c1npyvo"> Google Colab</a>.
+            An API was not used for this chart as for the others due to the nature of the data being demographic which would not have benefitted from using an API that would send requests on a yearly or less basis. </p>
+        
+        <h3>Quality of Healthcare</h2>
+        <h4>Figure 2 - Child Mortality Rates</h3>
+        <p>The first commonly cited reason as to why fertility rates have decreased, is due to declining child mortality rates. The idea is that when child mortality rates are high, the fertility rate remains high since parents are not sure about the survival of their children. This behaviour is shown in the chart as there seems to be a strong correlation between declining child mortality rates and declining fertility rates.</p>
+        <div class="chart" id="Chart2"></div>
+
+        <h4>Figure 3 - Access to contraception</h3>
+        <div class="chart" id="Chart3"></div>
+        <p>Another commonly cited reason as to why fertility rates have decreased, is due to poor access to contraception. The world map shows that poor access to contraception generally appears in Africa, which as shown in the line chart is the continent with the highest fertiltiy rates; so there does seem to be correlation between the two. </p>
+
+        <h3>Changing Gender Roles</h2>
+        
+        <h4> Figure 4 - Increasing Female Education</h3>
+        <p>This chart looks at the relationship between the years in school a women is expected to face and fertility rates, with each data point having its size related to the nation's population. The theory is that with greater education, women would have greater labour-market opportunities which provides them with a route other than motherhood. Based solely on this graph, there is a strong correlation between the two factors. However, the chart showing female labour force participation and fertilty rates doesn't show provide evidence for the theory; while the majority of countries do see their fertility rates decline, this isn't always in the face of increasing labour force participation, with most african countries seeing labour force participation decline. </p>
+        <div class="chart" id="Chart4"></div>
+
+        <h4>Figure 5 - Increase Labour Force Participation </h3>
+        <p class="rubric-launch">The data regarding the cost of living was scraped using colabatory, with the corresponding code being found: <a class="textLink" href="https://colab.research.google.com/drive/1GJ7-QxeB5vm-2kTNEEfbk2VvqP8D7VHA"> here</a>.</p> 
+        <div class="chart" id="Chart5"></div>
+
+        <h4>Figure 6 - Delays to Marriage </h3>
+        <p> One of the most commonly cited effects of female empowerment in both education and the labour market are delays to marriage. As more women look to pursue their careers, they postpone marriage which reduces the time-period at which women could have children but it also reduces the likelihood of fertility. But once again the chart doesn't show a clear correlation between delays to marriage and fertility rates, with European countries seemingly unaffected by the trend.</p>
+        <div class="chart" id="Chart6"></div>
+
+        <h3>Affordability</h2>
+
+        <h4> Figure 6 - Childcare Costs</h3>
+        <p>This chart looks at the relationship between child-care costs and fertility rates. <p>
+        <div class="chart" id="Chart7"></div>
+
+        <h4> Figure 7  - Family Policies</h3>
+
+
+    </div>
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "LineChart.json";
+    var myChart2 = "Mortality_Fertility.json";
+    var myChart3 = "World_Map_Contraception.json";
+    var myChart4 = "Education_Fertility.json";
+    var myChart5 = "Labour_Force_Chart_New.json";
+    var myChart6 = "FirstMarriage_Fertility.json";
+    var myChart7 = "Childcare_Costs.json";
+
+
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+
+    
+
+</script>
+
+</html>
+
+
