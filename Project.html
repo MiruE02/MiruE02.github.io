@@ -28,7 +28,7 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="Portfolio.html">PORTFOLIO</a></li>
                 <li><a href="Project.html">PROJECT</a></li>
                 <li><a href="https://github.com/MiruE02/MiruE02.github.io">GITHUB</a></li>
@@ -43,10 +43,7 @@
     <div class="myWeek1">
         <h1>Project - Understanding the decline in global fertility rates</h1>
         <h2> Aims of Projects</h2>
-        <p> Fertility rates are very important for the stability and growth of an economy. 
-            As fertility rates fall, working-age populations eventually fall as well, which can lead to labor shortages in countries where the working-age populations are in decline. 
-            This is why some see the current situation of declining fertility rates as a real issue. 
-            The main aims of this project are to evaluate the accuracy of some of the most commonly cited reasons behind the convergence in fertility rates and to show why there is infact differences in fertility rates amongst countries.
+        <p> Fertility rates are very important for the stability and growth of an economy. As fertility rates fall, working-age populations eventually fall as well, which can lead to labor shortages in countries as well as a higher old-age dependency ratio, as there are less economically-active people to support the ageing population. These are some of the reasons why figures like Elon Musk see the current situation of declining fertility rates as a real issue. The main aims of this project are to investigate the global decline in fertility rates by looking at some of the most commonly cited reasons behind this phenomenon.
             <p>   
 
         <h3>Figure 1 - Fertility Rate trends</h3>
@@ -71,8 +68,8 @@
         <div class="chart" id="Chart7"></div>
 
         <h2> Data</h2>
-        <p>I obtained data from three sources, the World Bank (Figures 1, 2, 3, 4, 5, 6) and Money.co.uk (Figure 7) and Statistics Times (Figures 1, 2, 4, 5, 6, 7). 
-            The data from the World Bank was accessed through CSV files; though an API was available, the cleaning of the data would have prevented the API from requesting data. 
+        <p>I obtained data from three sources, the World Bank (Figures 1, 2, 3, 4, 5, 6), Money.co.uk (Figure 7) and Statistics Times (Figures 1, 2, 4, 5, 6, 7). 
+            The data from the World Bank was accessed through CSV files; though an API was available, the extensive cleaning of the data would have prevented the API from requesting data. 
             Also, the demographic nature of the data reduces the benefits of an API, that would have only received new data on an annual or less basis.
             Aside from this, an advantage of data being uploaded on GitHub is that it will never go down, unlike with an API.
         </p>
@@ -82,18 +79,18 @@
         </p>
        
         <p>
-            I chose to focus on fertility decline on a global scale rather than looking at specific or groups of countries, since from the charts it was clear that different continents and countries reacted to trends in different ways; as such I believed that it provided a greater narrative to tell.
+            I chose to focus on fertility decline on a global scale rather than looking at specific countries, since these countries have been affected by these factors for differing periods of time, as such I believe that looking at all countries provides a better narrative.
         </p>
 
         <h2> Data Cleaning</h2>
-        <p>One issue that was clear was that the CSV files downloaded from the World Bank were not in a format that Vega Lite could not read, therefore, I used Google Colab to change the CSV files from wide-form to long-form – with the corresponding code being accessible here – <a class="textLink" href="https://colab.research.google.com/drive/1UlToXOKr9Hk2pOuY54aXdq3lncJSXG_D"> Figure 1</a>, 
+        <p>One issue that was clear was that the CSV files downloaded from the World Bank were not in a format that Vega-Lite could read, therefore, I used Google Colab to change the CSV files from wide-form to long-form – with the corresponding code being accessible here – <a class="textLink" href="https://colab.research.google.com/drive/1UlToXOKr9Hk2pOuY54aXdq3lncJSXG_D"> Figure 1</a>, 
             <a class="textLink" href="https://colab.research.google.com/drive/1edtY3Knaz5ttXl9bvePATonfOan4_Ho_#scrollTo=xo0PIogHFt6w"> Figure 2</a>, 
             <a class="textLink" href="https://colab.research.google.com/drive/1M3pAwhaUwjTiLVIboJ3z86q2_4mF5IWh#scrollTo=5WC637lpuvsd"> Figure 3</a>, 
             <a class="textLink" href="https://colab.research.google.com/drive/1edB0-PpYG62vLMbtlq0AlsQZi2ykeFzP#scrollTo=R5VPxF4lSHAS"> Figure 5</a>.
             Excel was also used to manually remove datapoints that were unnecessary such as datapoints for ‘World’ and ‘High-income Countries’. 
         </p>
         <p>
-            Another issue occurred for the World Map with the country names in the JSON file not matching those found in the World Bank CSV file- however this was fixed by manually adjusting the CSV file in excel. 
+            Another issue occurred for the World Map with the country names in the JSON file not matching those found in the World Bank CSV file- however this was fixed by manually changing the names of countries in the CSV file, using Excel. 
             For Figure 5, initially the chart had an issue with reading a CSV file. The chart only began to function once I converted the data into a JSON string using Google Colab, with the code accessible <a class="textLink" href="https://colab.research.google.com/drive/1_DL1Ucw-NxtVgd6zuYkArkfKSs9GaoxU#scrollTo=0Qcic0Ht1QrF">here</a>. 
             The reason for this is that the JSON data format distinguishes between string and numerical data while the CSV data format expresses all entries as strings which Vega couldn’t interpret.
         </p>
@@ -104,13 +101,15 @@
         </p>
         <p>
             The subsequent charts illustrate some of the trends that explain the decline in Fertility Rates, but what was interesting to see is that Europe seems unaffected by a lot of these trends in a way that Asia and Africa are not. 
-            This is likely due to Europe’s relative development compared to Asia and Africa, in that they have borne the brunt of much of these factors, while Asia and Africa are behind and are experiencing these effects on their fertility rates.   
-            This idea is seen in delays to marriage and increasing female education where there is a split in the negative correlation between these factors on fertility rates for Africa and Asia, while Europe seems unaffected.
+            This is likely due to Europe’s relative development compared to Asia and Africa which is shown in Figure 1 by the rate of fertility decline, with Europe relatively stagnant compared to the rest. This idea is seen in Figures 4 and 6, where there is a clear split in the datapoints between Africa and Asia who are clearly affected by the factors while European countries seem unaffected.</p>
+
         </p>
-        
+
         <p>
-             Another point to be made is that though increasing female labour force participation is an often-cited reason as to why fertility rates are declining, Figure 5 doesn’t provide clear evidence supporting this argument. Hovering over Asian and African countries will show a mix of responses, all of which experiencing fertility decline, with some countries having increasing female labour force participation, while others stagnant or declining.
-        </p>
+            Another particularly interesting finding is that though increasing female labour force participation is an often-cited reason as to why fertility rates are declining, Figure 5 doesn’t provide clear evidence supporting this argument. Hovering over Asian and African countries will show a mix of responses, all of which are experiencing fertility decline, with some countries having increased female labour force participation, while others stagnant or declining.        </p>
+
+        <p>
+            The evidence provided does illustrate the effects of these factors on fertility rates particularly on the continents of Africa and Asia. Unfortunately, the data available doesn’t stretch far enough in time for these factors to show any effect on European countries. However, Europe does provide insight into where the likes of African and Asian countries could be in the future. 
     </div>
 </body>
 

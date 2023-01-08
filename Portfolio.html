@@ -28,7 +28,7 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="Homepage.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="Portfolio.html">PORTFOLIO</a></li>
                     <li><a href="Project.html">PROJECT</a></li>
                     <li><a href="https://github.com/MiruE02/MiruE02.github.io">GITHUB</a></li>
@@ -43,10 +43,8 @@
         <h1>Data Science Portfolio</h1>
         
         <h3>Week 1</h3>
-        <p>The first chart shows the differences between goals scored by home and away teams.</p>
         <div class="chart" id="Chart1"></div>
 
-        <p>My second chart looks at the stadium capacity of teams from the 20/21 season.</p>
         <div class="chart" id="Chart2"></div>
 
         <h3> Week 2</h3>
@@ -67,7 +65,22 @@
         <h3> Week 4</h3>
         <p>The site was chosen as it did not attempt to prevent me from scraping the data by using cookies or javascript.</p>
         <div class="chart" id="Chart7"></div>
+        
+        <script>
 
+        // Find the current screen width:
+        let width = screen.width;
+
+        // Use an if function to pick the approprite visualisation:
+        if (width > 950) {
+         prices1 = "charts/ONSinflation/distributionsPerrenials_DarkWide.json";
+        } else if (width > 450) {
+         prices1 = "charts/ONSinflation/distributionsPerrenials_DarkMedium.json";
+        } else {
+         prices1 = "charts/ONSinflation/distributionsPerrenials_DarkNarrow.json";
+}        
+
+        </script>
 
         <h3>Week 5</h3> 
         <p> This task involved using ONS API to loop download nine different series as JSON files.</p>
@@ -124,8 +137,8 @@
 
 <script>
     //Define charts:
-    var myChart1 = "chartFootball1.json";
-    var myChart2 = "chartFootball3.json";
+    var myChart1 = "Fishing.json";
+    var myChart2 = "Food_Emissions.json";
     var myChart3 = "chart3_IMF.json";
     var myChart4 = "chart4_IMF_updated.json";
     var myChart5 = "Bad_Asian_Fertility_Visualisation.json";
