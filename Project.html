@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Document</title>
+    <title>Project Page</title>
 
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index.css">
@@ -28,11 +28,11 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html">PORTFOLIO</a></li>
+                <li><a href="Homepage.html">HOME</a></li>
+                <li><a href="Portfolio.html">PORTFOLIO</a></li>
                 <li><a href="Project.html">PROJECT</a></li>
                 <li><a href="https://github.com/MiruE02/MiruE02.github.io">GITHUB</a></li>
                 <li><a href="https://rapidcharts.io/datascience">COURSE</a></li>
-
             </ul>
 
         </div>
@@ -49,46 +49,68 @@
             The main aims of this project are to evaluate the accuracy of some of the most commonly cited reasons behind the convergence in fertility rates and to show why there is infact differences in fertility rates amongst countries.
             <p>   
 
-        <h3> Current Trends </h2>
-        <h4>Figure 1 - Fertility Rate trends</h3>
+        <h3>Figure 1 - Fertility Rate trends</h3>
         <div class="chart" id="Chart1"></div>
-        <p>Figure 1 is a line chart showing the fertility rate changes experienced by countries across the world with the data coming from <a href="https://data.worldbank.org/indicator/SP.DYN.TFRT.IN">the World Bank</a>. 
-            The line chart shows that every continent has experienced a fertility rate decline over the past 60 years with Africa remaining as the continent with the highest fertility rates. 
-            The data required tidying such as removing needless datapoints which was done directly in excel and it needed to be converted from wide-form to long-form which allowed vega to read it, the code for such is here: <a class="textLink" href="https://colab.research.google.com/drive/1UlToXOKr9Hk2pOuY54aXdq3lncJSXG_D#scrollTo=9hoN9c1npyvo"> Google Colab</a>.
-            An API was not used for this chart as for the others due to the nature of the data being demographic which would not have benefitted from using an API that would send requests on a yearly or less basis. </p>
-        
-        <h3>Quality of Healthcare</h2>
-        <h4>Figure 2 - Child Mortality Rates</h3>
-        <p>The first commonly cited reason as to why fertility rates have decreased, is due to declining child mortality rates. The idea is that when child mortality rates are high, the fertility rate remains high since parents are not sure about the survival of their children. This behaviour is shown in the chart as there seems to be a strong correlation between declining child mortality rates and declining fertility rates.</p>
+
+        <h3>Figure 2 - Child Mortality Rates</h3>
         <div class="chart" id="Chart2"></div>
 
-        <h4>Figure 3 - Access to contraception</h3>
+        <h3>Figure 3 - Access to contraception</h3>
         <div class="chart" id="Chart3"></div>
-        <p>Another commonly cited reason as to why fertility rates have decreased, is due to poor access to contraception. The world map shows that poor access to contraception generally appears in Africa, which as shown in the line chart is the continent with the highest fertiltiy rates; so there does seem to be correlation between the two. </p>
-
-        <h3>Changing Gender Roles</h2>
         
-        <h4> Figure 4 - Increasing Female Education</h3>
-        <p>This chart looks at the relationship between the years in school a women is expected to face and fertility rates, with each data point having its size related to the nation's population. The theory is that with greater education, women would have greater labour-market opportunities which provides them with a route other than motherhood. Based solely on this graph, there is a strong correlation between the two factors. However, the chart showing female labour force participation and fertilty rates doesn't show provide evidence for the theory; while the majority of countries do see their fertility rates decline, this isn't always in the face of increasing labour force participation, with most african countries seeing labour force participation decline. </p>
+        <h3> Figure 4 - Increasing Female Education</h3>
         <div class="chart" id="Chart4"></div>
 
-        <h4>Figure 5 - Increase Labour Force Participation </h3>
-        <p class="rubric-launch">The data regarding the cost of living was scraped using colabatory, with the corresponding code being found: <a class="textLink" href="https://colab.research.google.com/drive/1GJ7-QxeB5vm-2kTNEEfbk2VvqP8D7VHA"> here</a>.</p> 
+        <h3>Figure 5 - Increase Labour Force Participation </h3>
         <div class="chart" id="Chart5"></div>
 
-        <h4>Figure 6 - Delays to Marriage </h3>
-        <p> One of the most commonly cited effects of female empowerment in both education and the labour market are delays to marriage. As more women look to pursue their careers, they postpone marriage which reduces the time-period at which women could have children but it also reduces the likelihood of fertility. But once again the chart doesn't show a clear correlation between delays to marriage and fertility rates, with European countries seemingly unaffected by the trend.</p>
+        <h3>Figure 6 - Delays to Marriage </h3>
         <div class="chart" id="Chart6"></div>
 
-        <h3>Affordability</h2>
-
-        <h4> Figure 6 - Childcare Costs</h3>
-        <p>This chart looks at the relationship between child-care costs and fertility rates. <p>
+        <h3> Figure 7 - Childcare Costs</h3>
         <div class="chart" id="Chart7"></div>
 
-        <h4> Figure 7  - Family Policies</h3>
+        <h2> Data</h2>
+        <p>I obtained data from three sources, the World Bank (Figures 1, 2, 3, 4, 5, 6) and Money.co.uk (Figure 7) and Statistics Times (Figures 1, 2, 4, 5, 6, 7). 
+            The data from the World Bank was accessed through CSV files; though an API was available, the cleaning of the data would have prevented the API from requesting data. 
+            Also, the demographic nature of the data reduces the benefits of an API, that would have only received new data on an annual or less basis.
+            Aside from this, an advantage of data being uploaded on GitHub is that it will never go down, unlike with an API.
+        </p>
+        <p>
+            The data for child-bearing costs was scraped from Money.co.uk with the corresponding code being accessible <a class="textLink" href="https://colab.research.google.com/drive/19RCEhVcSXRaVGMDBK-e7iYH6SUpRD3FX#scrollTo=b3H_54DUlxQ_"> here</a>:
+            Similarly, the data that allowed the function of the legends in the figures, and the continent selection parameter in Figure 1, was scraped from Statistics Times, and that can be found <a class="textLink" href="https://colab.research.google.com/drive/1tVVqPGxhy4DCQoCxk9NmAwivbnCbZcmo#scrollTo=ikaFyr5fNxPa"> here</a>.
+        </p>
+       
+        <p>
+            I chose to focus on fertility decline on a global scale rather than looking at specific or groups of countries, since from the charts it was clear that different continents and countries reacted to trends in different ways; as such I believed that it provided a greater narrative to tell.
+        </p>
 
+        <h2> Data Cleaning</h2>
+        <p>One issue that was clear was that the CSV files downloaded from the World Bank were not in a format that Vega Lite could not read, therefore, I used Google Colab to change the CSV files from wide-form to long-form – with the corresponding code being accessible here – <a class="textLink" href="https://colab.research.google.com/drive/1UlToXOKr9Hk2pOuY54aXdq3lncJSXG_D"> Figure 1</a>, 
+            <a class="textLink" href="https://colab.research.google.com/drive/1edtY3Knaz5ttXl9bvePATonfOan4_Ho_#scrollTo=xo0PIogHFt6w"> Figure 2</a>, 
+            <a class="textLink" href="https://colab.research.google.com/drive/1M3pAwhaUwjTiLVIboJ3z86q2_4mF5IWh#scrollTo=5WC637lpuvsd"> Figure 3</a>, 
+            <a class="textLink" href="https://colab.research.google.com/drive/1edB0-PpYG62vLMbtlq0AlsQZi2ykeFzP#scrollTo=R5VPxF4lSHAS"> Figure 5</a>.
+            Excel was also used to manually remove datapoints that were unnecessary such as datapoints for ‘World’ and ‘High-income Countries’. 
+        </p>
+        <p>
+            Another issue occurred for the World Map with the country names in the JSON file not matching those found in the World Bank CSV file- however this was fixed by manually adjusting the CSV file in excel. 
+            For Figure 5, initially the chart had an issue with reading a CSV file. The chart only began to function once I converted the data into a JSON string using Google Colab, with the code accessible <a class="textLink" href="https://colab.research.google.com/drive/1_DL1Ucw-NxtVgd6zuYkArkfKSs9GaoxU#scrollTo=0Qcic0Ht1QrF">here</a>. 
+            The reason for this is that the JSON data format distinguishes between string and numerical data while the CSV data format expresses all entries as strings which Vega couldn’t interpret.
+        </p>
 
+        <h2> Conclusion</h2>
+        <p>
+            From the first figure alone, it is clear that every continent has experienced a fertility rate decline over the past 60 years with Africa remaining as the continent with the highest fertility rates. 
+        </p>
+        <p>
+            The subsequent charts illustrate some of the trends that explain the decline in Fertility Rates, but what was interesting to see is that Europe seems unaffected by a lot of these trends in a way that Asia and Africa are not. 
+            This is likely due to Europe’s relative development compared to Asia and Africa, in that they have borne the brunt of much of these factors, while Asia and Africa are behind and are experiencing these effects on their fertility rates.   
+            This idea is seen in delays to marriage and increasing female education where there is a split in the negative correlation between these factors on fertility rates for Africa and Asia, while Europe seems unaffected.
+        </p>
+        
+        <p>
+             Another point to be made is that though increasing female labour force participation is an often-cited reason as to why fertility rates are declining, Figure 5 doesn’t provide clear evidence supporting this argument. Hovering over Asian and African countries will show a mix of responses, all of which experiencing fertility decline, with some countries having increasing female labour force participation, while others stagnant or declining.
+        </p>
     </div>
 </body>
 
